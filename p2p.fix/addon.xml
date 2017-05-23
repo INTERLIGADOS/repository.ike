@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="p2p.fix" name="[COLOR cyan]P2p.Fix.Ike[/COLOR]" version="2.0.2" provider-name="[COLOR wite]Ike[/COLOR]">
+<addon id="p2p" name="[COLOR cyan]P2p.Fix[/COLOR]" version="1.0.1" provider-name="[COLOR wite]Ike[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -7,8 +7,8 @@
         <provides>program executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Build.Março</summary>
-    <description lang="en">Build.Março</description>
+    <summary lang="en">P2p.Fix</summary>
+    <description lang="en">P2p.Fix</description>
     <platform>all</platform>
   </extension>
 </addon>
