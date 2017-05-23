@@ -12,14 +12,14 @@ import ntpath
 
 USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
 base='YOUR SITE HERE'
-ADDON=xbmcaddon.Addon(id='p2p.fix.ike')
+ADDON=xbmcaddon.Addon(id='p2p.fix')
 dialog = xbmcgui.Dialog()    
-VERSION = "2.0.1"
-PATH = "p2p.fix.ike"            
+VERSION = "2.0.2"
+PATH = "p2p.fix"            
 
     
 def CATEGORIES():
-    link = OPEN_URL('https://www.dropbox.com/s/1s2qifw8jmk11r8/p2p.fix.ike.txt?dl=1).replace('\n','').replace('\r','')
+    link = OPEN_URL('https://www.dropbox.com/s/1s2qifw8jmk11r8/p2p.fix.ike.txt?dl=1').replace('\n','').replace('\r','')
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
     for name,url,iconimage,fanart,description in match:
         addDir(name,url,1,iconimage,fanart,description)
@@ -38,7 +38,7 @@ def OPEN_URL(url):
 def wizard(name,url,description):
     path = xbmc.translatePath(os.path.join('special://home/addons','packages'))
     dp = xbmcgui.DialogProgress()
-    dp.create("p2p.fix.ike","Downloading ",'', 'Please Wait')
+    dp.create("p2p.fix","Downloading ",'', 'Please Wait')
     lib=os.path.join(path, name+'.zip')
     try:
        os.remove(lib)
