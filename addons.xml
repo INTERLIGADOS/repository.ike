@@ -196,11 +196,12 @@ Readbufferfactor : 20</description>
 
 <addon id="plugin.video.live.ike"
        name="[COLOR white][B]IKE[/B][/COLOR]"
-       version="3.0.1"
+       version="3.0.2"
        provider-name="[COLOR red][B]IKE SANTOS[/B][/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
+	<import addon="repository.kodil" version="1.2"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.requests" />
@@ -211,7 +212,7 @@ Readbufferfactor : 20</description>
     <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.module.simplejson" />
      <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -222,11 +223,7 @@ Readbufferfactor : 20</description>
 		<checksum>http://raw.github.com/ikesuncat/repository.ike/master/addons.xml.md5</checksum>
 		<datadir zip="true">http://raw.github.com/ikesuncat/repository.ike/master/repo/</datadir>
 	</extension>
-	<extension point="xbmc.addon.repository" name=".Kodisrael  Repository ">
-        <info compressed="false">https://raw.githubusercontent.com/kodil/kodil/master/addons.xml</info>
-        <checksum>http://www.lvtvv.com/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/kodil/kodil/master/repo</datadir>
-    </extension>
+
   <extension point="xbmc.addon.metadata">
     <summary>[COLOR white][B]Ike Addon- Addon Gratis e sem Donativos[/B][/COLOR]</summary>
     <description>
