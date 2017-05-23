@@ -19,7 +19,7 @@ PATH = "phenon"
 
     
 def CATEGORIES():
-    link = OPEN_URL('https://www.dropbox.com/s/l2trcu3b8innec3/phenon.txt?dl=1').replace('\n','').replace('\r','')
+    link = OPEN_URL('https://www.dropbox.com/s/61hm4g9v3n1nnwk/phenon.txt?dl=1').replace('\n','').replace('\r','')
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
     for name,url,iconimage,fanart,description in match:
         addDir(name,url,1,iconimage,fanart,description)

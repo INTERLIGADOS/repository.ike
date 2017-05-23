@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="build.ike" name="[COLOR lime]Build.Special.Ike[/COLOR]" version="1.0.2" provider-name="[COLOR blue]Ike[/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>program executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">build.ike</summary>
-    <description lang="en">Special.Ike.Build</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="build.m" name="[COLOR cyan]Build.MarÃ§o[/COLOR]" version="1.0.5" provider-name="[COLOR wite]Ike[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -210,7 +196,7 @@ Readbufferfactor : 20</description>
 
 <addon id="plugin.video.live.ike"
        name="[COLOR white][B]IKE[/B][/COLOR]"
-       version="3.0.0"
+       version="3.0.1"
        provider-name="[COLOR red][B]IKE SANTOS[/B][/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -242,7 +228,6 @@ Readbufferfactor : 20</description>
     <description>
         [COLOR aqua][B]Addon Ike : Todos os links disponibilizados no Addon estao disponiveis
 em procura livre na internet..
-Grupo do Facebook ;https://www.facebook.com/groups/1558201737811754/?ref=group_cover
 Canal do Youtube ;https://www.youtube.com/channel/UCBwpwTi1InHtUSnPJkP93mw
  Enjoy !![/B][/COLOR]
 
@@ -635,20 +620,6 @@ O addon apenas inclui streams oficiais.</description>
     <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
     <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
     <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="vod" name="[COLOR lime]Vod.Ike[/COLOR]" version="1.0.3" provider-name="[COLOR blue]Ike[/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>program executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Vod.Ike</summary>
-    <description lang="en">vod.Ike</description>
     <platform>all</platform>
   </extension>
 </addon>
