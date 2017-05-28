@@ -103,6 +103,29 @@ Readbufferfactor : 20</description>
 
 </addon>
 
+<addon id="plugin.program.ike.clean"
+       name="Ike.Clean"
+       version="1.0"
+       provider-name="Ike">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+ 	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>ManutenÃ§Ã£o</summary>
+    <description>Programa para uso exclusivo do Addon Ike.</description>
+    <language></language>
+    <license></license>
+    <source></source>
+    <forum></forum>
+    <website></website>
+  </extension>
+</addon>
+
 <addon id="plugin.program.indigo" version="1.0.2"
 	name="Indigo" provider-name="tvaddons.ag">
 	<requires>
@@ -576,6 +599,25 @@ O addon apenas inclui streams oficiais.</description>
     <license>Simplified BSD</license>
     <source>https://github.com/chrippa/livestreamer.git</source>
     <website>http://livestreamer.io</website>
+  </extension>
+</addon>
+
+<addon id="service.ike.autosubs"
+    name="Ike AutoSubs" version="1.0" provider-name="Ike">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="default.py" start="login" />
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Auto Search for Subtitles on Play</summary>
+    <description lang="en">Auto Search for Subtitles on Playback start if no subs are found.[CR][CR]Icon credits goes to zNET Computer Solutions http://www.znetcs.pl</description>
+    <summary lang="pt">Pesquisa AutomÃ¡tica por legendas no Play</summary>
+    <description lang="pt">Pesquisa AutomÃ¡tica por legendas na reproduÃ§Ã£o se nÃ£o existirem legendas.[CR][CR]CrÃ©ditos dos icons vÃ£o para zNET Computer Solutions http://www.znetcs.pl</description>
+    <platform>all</platform>
+    <language>pt</language>
   </extension>
 </addon>
 
